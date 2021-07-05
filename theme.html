@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Verfie</title>
+    <style>
+      body {
+        text-align: center;
+        margin: 0;
+      }
+
+      /* 상단에 안먹히는 이유 찾아야됨 */
+
+      .header {
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 22px;
+        background: white;
+        width: 1920px;
+        height: 60px;
+        box-shadow: 0px 4px 8px rgba(181, 181, 181, 0.25);
+      }
+
+      .arrowLeft1 {
+        position: absolute;
+        top: 4%;
+        left: 50%;
+        transform: translateX(-200px);
+      }
+
+      .logo {
+        position: absolute;
+        top: 3%;
+        left: 50%;
+        transform: translateX(-30px);
+      }
+
+      .main_text {
+        margin-top: 34px;
+        margin-bottom: 10px;
+        font-family: poppins;
+        font-size: 25px;
+        line-height: 128.5%;
+        font-weight: bold;
+        text-align: center;
+        background: linear-gradient(45deg, rgb(0, 26, 255), #5100ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .sub_text {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        width: 366px;
+        height: 18px;
+        left: 537px;
+        top: 249px;
+
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <a class="arrowLeft1" href="index.html">
+        <img
+          class="arrowLeft"
+          src="images/arrowLeft.png"
+          width="10"
+          height="18"
+        />
+      </a>
+
+      <img class="logo" src="images/logo.png" width="60" height="30" />
+    </div>
+
+    <div class="main_text">Choose a theme</div>
+
+    <div class="sub_text">
+      From birthday party to booze, check the instruction!
+    </div>
+
+    <!-- <div class="sub_text">
+      <div class="sub_1">From</div>
+      <div class="sub_2">birthday party</div>
+      <div class="sub_3">to</div>
+      <div class="sub_4">booze</div>
+      <div class="sub_5">, check the instruction!</div>
+    </div> -->
+
+    <div class="themePhoto">
+      <a class="birthday_theme" href="inst_birthday.html">
+        <img
+          class="birthday"
+          src="images/theme_bday.png"
+          width="400"
+          height="130"
+        />
+      </a>
+      <br />
+      <a class="random_game_theme" href="camera.html">
+        <img
+          class="random_game"
+          src="images/theme_game.png"
+          width="400"
+          height="130"
+        />
+      </a>
+      <br />
+      <a class="cheers_theme" href="camera.html">
+        <img
+          class="cheers"
+          src="images/theme_cheers.png"
+          width="400"
+          height="130"
+        />
+      </a>
+      <br />
+      <a class="fries_theme" href="camera.html">
+        <img
+          class="fries"
+          src="images/theme_fries.png"
+          width="400"
+          height="130"
+        />
+      </a>
+    </div>
+  </body>
+</html>

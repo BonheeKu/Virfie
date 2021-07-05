@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <title>Capture picture from your webcam</title>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.25/webcam.js"
+    ></script>
+    <style>
+      #camera {
+        margin: 0 auto;
+        height: auto;
+        width: 1000px;
+        text-align: left;
+      }
+      #btPic1 {
+        margin: 0;
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        margin-bottom: 10px;
+      }
+      #btPic2 {
+        margin: 0;
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="camera"></div>
+
+    <!--FOR THE SNAPSHOT-->
+    <input
+      type="button"
+      value="cameraIcon"
+      id="btPic1"
+      onclick="cameraicon()"
+    />
+
+    <p id="snapShot"></p>
+
+    <input type="button" value="videoIcon" id="btPic2" onclick="cameraicon()" />
+
+    <p id="snapShot"></p>
+  </body>
+
+  <script>
+    // CAMERA SETTINGS.
+    Webcam.set({
+      width: 1200,
+      height: 700,
+      //   1300x800부터 안됨
+      image_format: "jpeg",
+      jpeg_quality: 100,
+    });
+    Webcam.attach("#camera");
+
+    // SHOW THE SNAPSHOT.
+    takeSnapShot = function () {
+      Webcam.snap(function (data_uri) {
+        document.getElementById("snapShot").innerHTML =
+          '<img src="' + data_uri + '" width="700px" height="700px" />';
+      });
+    };
+  </script>
+</html>
