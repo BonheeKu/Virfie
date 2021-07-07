@@ -1,3 +1,1 @@
-test for commit
-test 2 for commit
-test 3 for commit
+Virfie is a service that helps people in distance to take picture as they are together.
